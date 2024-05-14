@@ -43,7 +43,7 @@
 
 <div class="container-sm text-center">
     <img
-        src="https://media.licdn.com/dms/image/C5603AQEiFCckTAh1CA/profile-displayphoto-shrink_800_800/0/1628185441619?e=1714608000&v=beta&t=iQFSSuqVq_Harynd5XsvUoM239U_0BdGI_LjKYR7KZU"
+        src="https://scontent-fco2-1.xx.fbcdn.net/v/t1.18169-9/18882030_1914030195476894_179049056442037752_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LqHoCcTR8joQ7kNvgFtHJPH&_nc_ht=scontent-fco2-1.xx&oh=00_AYCrr4IhsnQAIrfAKaN2WhO6HUN6zv58Jm4Ts-ShcJTh2w&oe=666A8A00"
         class="img-fluid"
         alt="amore mio"
     >
