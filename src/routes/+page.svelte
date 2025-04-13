@@ -13,6 +13,8 @@
     <img src="https://media.tenor.com/FJonHWl-xVsAAAAM/ketelaere-de-ketelaere.gif">
   </div>
   <div class="col-12 mt-2">
+    <a class="btn btn-secondary" href="{base}/me">me</a>
+
     <a class="btn btn-secondary" href="{base}/about">About</a>
     <!-- <a href="{base}/friends">Friends</a>  -->
     <a class="btn btn-danger" href="{base}/love">Amore mio</a>
