@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/stores';
     import { onMount } from 'svelte';
+    import { base } from "$app/paths";
 
     let slug;
 
@@ -11,15 +12,39 @@
         {
             "id": 1,
             "question": "What is the capital of France?",
-            "options": ["Paris", "London", "Berlin", "Madrid"],
-            "correctAnswer": "Paris"
+            "options": ["Paris-q", "London", "Berlin", "Madrid"],
+            "correctAnswer": "Paris-q",
+            "nextAnswer": 2
         },
         {
             "id": 2,
             "question": "What is 2 + 2?",
-            "options": ["3", "4", "5", "6"],
-            "correctAnswer": "4"
+            "options": ["3", "vera", "5", "6"],
+            "correctAnswer": "vera",
+            "nextAnswer": 3
         },
+        {
+            "id": 4,
+            "question": "What is 2 + 2?",
+            "options": ["3", "vera", "5", "6"],
+            "correctAnswer": "vera",
+            "nextAnswer": 4
+        },
+        {
+            "id": 5,
+            "question": "What is 2 + 2?",
+            "options": ["3", "vera", "5", "6"],
+            "correctAnswer": "vera",
+            "nextAnswer": 5
+        },
+        {
+            "id": 6,
+            "question": "What is 2 + 2?",
+            "options": ["3", "vera", "5", "6"],
+            "correctAnswer": "vera",
+            "nextAnswer": base + "/happybd/present/"
+        },
+
         // {
         //     "id": 3,
         //     "question": "Which planet is known as the Red Planet?",
@@ -31,12 +56,19 @@
     let currentQuestionIndex = 0;
     let result = '';
     let showRetry = false;
+    let progressivo = 1;
 
     function checkAnswer(selectedOption) {
         const currentQuestion = questions[currentQuestionIndex];
         if (selectedOption === currentQuestion.correctAnswer) {
             // Navigate to another page
-            window.location.href = '/happybd/present'; // Replace with actual route
+            if (currentQuestion.id === 6) {
+                window.location.href = '/happybd/present'; // Replace with actual route
+            } else {
+                currentQuestionIndex = currentQuestion.nextAnswer - 1; // Adjust for zero-based index
+                result = 'Correct! Next question.';
+            }
+            window.location.href = {base} +'/happybd/' + currentQuestionIndex; // Replace with actual route
         } else {
             result = 'Incorrect. Would you like to try again?';
             showRetry = true;

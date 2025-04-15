@@ -14,7 +14,7 @@ const config = {
 		prerender: {
 			// use relative URLs similar to an anchor tag <a href="/test/1"></a>
 			// do not include group layout folders in the path such as /(group)/test/1
-			entries: ['/', '/about','/love','/me', '/friend', '/happybd', '/happybd/1', '/happybd/2', '/happybd/present']
+			entries: ['/', '/about','/love','/me', '/friend', '/happybd', '/happybd/1', '/happybd/2', '/happybd/3', '/happybd/4', '/happybd/5', '/happybd/present']
 		},
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
