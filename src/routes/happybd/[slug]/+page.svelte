@@ -61,7 +61,7 @@
                 window.location.href = '/sveltekit-fe/happybd/present'; // Replace with actual route
             } else {
                 result = 'Correct! Next question.';
-                window.location.href = '/sveltekit-fe//happybd/' + (questions[slug].id+1); // Replace with actual route
+                window.location.href = '/sveltekit-fe//happybd/' + (questions[slug].id); // Replace with actual route
             }
         } else {
             result = 'Incorrect. Would you like to try again?';
