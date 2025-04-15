@@ -17,3 +17,9 @@ In this way is possible make an edit witouth make a commit.
 On Settings repository, page must select as source branch 'main'. Each commit will deploy a new instance of the app.
 
 From official documentation guideline, is necessary disable Jekyll build process by creating an empty file named .nojekyll at the root of the project.
+
+# Comandi per esecuzione
+
+npm install
+npm run build
+npm run preview
