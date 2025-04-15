@@ -49,12 +49,11 @@
     let currentQuestionIndex = 0;
     let result = '';
     let showRetry = false;
-    let progressivo = slug; // recuperalo dalla basepath
 
     function checkAnswer(selectedOption) {
-        console.log(selectedOption);
-        const currentQuestion = questions[progressivo];
-        console.log(questions[progressivo])
+        console.log(selectedOption)
+        const currentQuestion = questions[slug];
+        console.log(questions[slug])
         console.log(currentQuestion);
         if (selectedOption === currentQuestion.correctAnswer) {
             // Navigate to another page
@@ -82,24 +81,11 @@
 
 <h1>Slug: {slug}</h1>
 
-<div>
-    <h2>{questions[currentQuestionIndex].question}</h2>
-    <ul>
-        {#each questions[currentQuestionIndex].options as option}
-            <li on:click={() => checkAnswer(option)}>{option}</li>
-        {/each}
-    </ul>
-    <p>{result}</p>
-    {#if showRetry}
-        <button on:click={restartQuiz}>Start Again</button>
-    {/if}
-</div>
-
 {#if questions[slug]}
     <h2>{questions[slug].question}</h2>
     <ul>
         {#each questions[slug].options as option}
-            <li>{option}</li>
+            <button type="button" on:click={() => checkAnswer(option)}>{option}</button>
         {/each}
     </ul>
 {:else}
