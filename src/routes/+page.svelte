@@ -20,7 +20,8 @@
     <a class="btn btn-danger" href="{base}/love">Amore mio</a>
 
     <a class="btn btn-primary" href="{base}/friend">Friend</a>
-    
+    <a class="btn btn-primary" href="{base}/happybd">Happy Birthday</a>
+
   </div>
 
   <div class="container w-50 mt-3 mb-4">
