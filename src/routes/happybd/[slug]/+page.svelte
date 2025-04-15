@@ -79,15 +79,24 @@
 
 </script>
 
+
 <h1>Slug: {slug}</h1>
 
-{#if questions[slug]}
-    <h2>{questions[slug].question}</h2>
-    <ul>
+<div class="container">
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image" class="img-fluid" />
+    {#if questions[slug]}
+    <div class="row">
+        {questions[slug].question}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, adipisci tempore facere et nobis beatae consectetur impedit fuga at suscipit delectus. Magnam tempora sed praesentium quam beatae velit possimus sit.
+    </div>
+    <div class="row">
         {#each questions[slug].options as option}
-            <button type="button" on:click={() => checkAnswer(option)}>{option}</button>
+            <button class="col btn btn-primary mx-2" on:click={() => checkAnswer(option)}>{option}</button>
         {/each}
-    </ul>
-{:else}
-    <p>Question not found.</p>
-{/if}
+    </div>
+    {:else}
+        <p>Question not found.</p>
+    {/if}
+    
+</div>
+
