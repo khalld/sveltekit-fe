@@ -52,7 +52,10 @@
     let progressivo = slug; // recuperalo dalla basepath
 
     function checkAnswer(selectedOption) {
+        console.log(selectedOption);
         const currentQuestion = questions[progressivo];
+        console.log(questions[progressivo])
+        console.log(currentQuestion);
         if (selectedOption === currentQuestion.correctAnswer) {
             // Navigate to another page
             if (currentQuestion.id === 5) {
