@@ -24,51 +24,43 @@
             "nextAnswer": 3
         },
         {
-            "id": 4,
+            "id": 3,
             "question": "What is 2 + 2?",
             "options": ["3", "vera", "5", "6"],
             "correctAnswer": "vera",
             "nextAnswer": 4
         },
         {
-            "id": 5,
+            "id": 4,
             "question": "What is 2 + 2?",
             "options": ["3", "vera", "5", "6"],
             "correctAnswer": "vera",
             "nextAnswer": 5
         },
         {
-            "id": 6,
+            "id": 5,
             "question": "What is 2 + 2?",
             "options": ["3", "vera", "5", "6"],
             "correctAnswer": "vera",
             "nextAnswer": base + "/happybd/present/"
         },
-
-        // {
-        //     "id": 3,
-        //     "question": "Which planet is known as the Red Planet?",
-        //     "options": ["Earth", "Mars", "Jupiter", "Venus"],
-        //     "correctAnswer": "Mars"
-        // }
     ]
     
     let currentQuestionIndex = 0;
     let result = '';
     let showRetry = false;
-    let progressivo = 1;
+    let progressivo = slug; // recuperalo dalla basepath
 
     function checkAnswer(selectedOption) {
-        const currentQuestion = questions[currentQuestionIndex];
+        const currentQuestion = questions[progressivo];
         if (selectedOption === currentQuestion.correctAnswer) {
             // Navigate to another page
-            if (currentQuestion.id === 6) {
+            if (currentQuestion.id === 5) {
                 window.location.href = '/happybd/present'; // Replace with actual route
             } else {
-                currentQuestionIndex = currentQuestion.nextAnswer - 1; // Adjust for zero-based index
                 result = 'Correct! Next question.';
+                window.location.href = '/happybd/' + (slug+1); // Replace with actual route
             }
-            window.location.href = {base} +'/happybd/' + currentQuestionIndex; // Replace with actual route
         } else {
             result = 'Incorrect. Would you like to try again?';
             showRetry = true;
