@@ -102,7 +102,7 @@
                     <div>{result}</div>
                     {#if answerisright}
                         <div class="w-100"></div>
-                        <button type="button" class="btn btn-sm bt-warning" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[idx].id)}>Vai alla domanda successiva</button>
+                        <button type="button" class="btn btn-sm bt-warning" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[idx].nextAnswer)}>Vai alla domanda successiva</button>
                     {/if}
                 </div>
             {/if}
