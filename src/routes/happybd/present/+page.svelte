@@ -31,7 +31,7 @@
     <h1>happy present!</h1>
     <div class="row">
         <div class="col-12 text-center">
-            <img src="https://media.tenor.com/FJonHWl-xVsAAAAM/ketelaere-de-ketelaere.gif" alt="Happy Birthday">
+            <img src="https://khalld.github.io/sveltekit-fe/imgshbday/1.jpg" alt="Happy Birthday">
         </div>
         <p>
             Ciao Marta! (?) <br> 
