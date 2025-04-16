@@ -1,6 +1,6 @@
 <script>
     import Heart from '../../../lib/Heart.svelte';
-    // import ControlsBirthday from '../../../lib/ControlsBirthday.svelte'
+    import ControlsBirthday from '../../../lib/ControlsBirthday.svelte'
 
     let innerWidth = 2000;
     let innerHeight = 1000;
@@ -38,6 +38,6 @@
 </div>
 
 
-<!-- <div class="container w-50 mt-3 mb-4">
+<div class="container w-50 mt-3 mb-4">
     <ControlsBirthday/>
-</div> -->
+</div>
