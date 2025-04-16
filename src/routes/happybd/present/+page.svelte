@@ -1,5 +1,6 @@
 <script>
     import Heart from '../../../lib/Heart.svelte';
+    import Controls from '../../../lib/player/Controls.svelte';
 
     let innerWidth = 2000;
     let innerHeight = 1000;
@@ -41,4 +42,8 @@
             Sei pronta?
         </p>
     </div>
+</div>
+
+<div class="container w-50 mt-3 mb-4">
+    <Controls/>
 </div>
