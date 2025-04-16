@@ -1,7 +1,7 @@
 
 <script>
     import { base } from "$app/paths";
-    import ControlsBirthday from '../lib/player/ControlsBirthday.svelte'
+    import Controls from '../lib/player/Controls.svelte'
 </script>
 
 <h1
@@ -25,7 +25,7 @@
   </div>
 
   <div class="container w-50 mt-3 mb-4">
-    <ControlsBirthday/>
+    <Controls/>
   </div>
 
   <div class="col-12 mt-2">
