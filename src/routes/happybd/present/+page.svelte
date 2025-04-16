@@ -1,6 +1,6 @@
 <script>
     import Heart from '../../../lib/Heart.svelte';
-    import ControlsBirthday from '../../../lib/ControlsBirthday.svelte'
+    import ControlsBirthday from '../../../lib/player/ControlsBirthday.svelte'
 
     let innerWidth = 2000;
     let innerHeight = 1000;
