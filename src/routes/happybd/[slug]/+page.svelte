@@ -13,35 +13,40 @@
             "question": "What is the capital of France?",
             "options": ["Paris-q", "London", "Berlin", "Madrid"],
             "correctAnswer": "Paris-q",
-            "nextAnswer": 2
+            "nextAnswer": 2,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/2.jpg"
         },
         {
             "id": 2,
             "question": "What is 2 + 2?",
             "options": ["3", "vera", "5", "6"],
             "correctAnswer": "vera",
-            "nextAnswer": 3
+            "nextAnswer": 3,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/3.jpg"
         },
         {
             "id": 3,
             "question": "What is 2 + 2?",
             "options": ["3", "vera", "5", "6"],
             "correctAnswer": "vera",
-            "nextAnswer": 4
+            "nextAnswer": 4,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/4.jpg"
         },
         {
             "id": 4,
             "question": "What is 2 + 2?",
             "options": ["3", "vera", "5", "6"],
             "correctAnswer": "vera",
-            "nextAnswer": 5
+            "nextAnswer": 5,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/5.jpg"
         },
         {
             "id": 5,
             "question": "What is 2 + 2?",
             "options": ["3", "vera", "5", "6"],
             "correctAnswer": "vera",
-            "nextAnswer": base + "/happybd/present/"
+            "nextAnswer": null,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/6.jpg"
         },
     ]
     
@@ -76,29 +81,28 @@
 <div class="container">
     <h1>Domanda: {slug}</h1>
 
-    <img src="https://via.placeholder.com/150" alt="Placeholder Image" class="img-fluid" />
-
     {#if questions[slug]}
-    <div class="row">
-        <p>
-        {questions[slug].question}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, adipisci tempore facere et nobis beatae consectetur impedit fuga at suscipit delectus. Magnam tempora sed praesentium quam beatae velit possimus sit.
-        </p>
-        </div>
-    <div class="row">
-        {#each questions[slug].options as option}
-            <button class="col col-12 btn btn-primary mx-2 my-2" on:click={() => checkAnswer(option)}>{option}</button>
-        {/each}
-        {#if result}
-            <div class="alert alert-{status} d-flex align-items-center mx-2" role="alert">
-                <div>{result}</div>
-                {#if answerisright}
-                <div class="w-100"></div>
-                    <button type="button" class="btn btn-lg bt-success" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[slug].id)}>Vai alla domanda successiva</button>
-                {/if}
+        <img class="img-fluid" src={questions[slug].image} alt="ciaoo" />
+        <div class="row">
+            <p>
+            {questions[slug].question}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, adipisci tempore facere et nobis beatae consectetur impedit fuga at suscipit delectus. Magnam tempora sed praesentium quam beatae velit possimus sit.
+            </p>
             </div>
-        {/if}
-    </div>
+        <div class="row">
+            {#each questions[slug].options as option}
+                <button class="col col-12 btn btn-primary mx-2 my-2" on:click={() => checkAnswer(option)}>{option}</button>
+            {/each}
+            {#if result}
+                <div class="alert alert-{status} d-flex align-items-center mx-2" role="alert">
+                    <div>{result}</div>
+                    {#if answerisright}
+                    <div class="w-100"></div>
+                        <button type="button" class="btn btn-lg bt-success" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[slug].id)}>Vai alla domanda successiva</button>
+                    {/if}
+                </div>
+            {/if}
+        </div>
     {:else}
         <p>Question not found.</p>
     {/if}
