@@ -1,6 +1,5 @@
 <script>
     import Heart from '../../../lib/Heart.svelte';
-    import ControlsBirthday from '../../../lib/player/ControlsBirthday.svelte'
 
     let innerWidth = 2000;
     let innerHeight = 1000;
@@ -35,9 +34,4 @@
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatum dignissimos, error totam sunt iste ea non architecto omnis sapiente atque placeat eveniet aliquam, cupiditate saepe ipsam! Rerum, aliquam labore!</p>
     </div>
-</div>
-
-
-<div class="container w-50 mt-3 mb-4">
-    <ControlsBirthday/>
 </div>
