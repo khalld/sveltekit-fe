@@ -95,14 +95,14 @@
             </div>
         <div class="row">
             {#each questions[idx].options as option}
-                <button class="col col-12 btn btn-primary mx-2 my-2" on:click={() => checkAnswer(option)}>{option}</button>
+                <button class="col col-12 btn btn-primary mx-2 my-2 " on:click={() => checkAnswer(option)}>{option}</button>
             {/each}
             {#if result}
                 <div class="alert alert-{status} d-flex align-items-center mx-2" role="alert">
                     <div>{result}</div>
                     {#if answerisright}
                         <div class="w-100"></div>
-                        <button type="button" class="btn btn-sm bt-warning" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[idx].nextAnswer)}>Vai alla domanda successiva</button>
+                        <button type="button" class="btn btn-sm bt-warning border border-dark border-2" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[idx].nextAnswer)}>Vai alla domanda successiva</button>
                     {/if}
                 </div>
             {/if}
