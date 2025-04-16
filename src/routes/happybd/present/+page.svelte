@@ -32,6 +32,13 @@
         <div class="col-12 text-center">
             <img src="https://media.tenor.com/FJonHWl-xVsAAAAM/ketelaere-de-ketelaere.gif" alt="Happy Birthday">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatum dignissimos, error totam sunt iste ea non architecto omnis sapiente atque placeat eveniet aliquam, cupiditate saepe ipsam! Rerum, aliquam labore!</p>
+        <p>
+            Ciao Marta! (?) <br> 
+            Siamo una software house locale il cui obbiettivo è fare tanti tanti molti soldi ma siamo stati ingaggiati da un anonimo benefattore per regalarti un messaggio di auguri digitale per il tuo compleanno!<br>
+            L'anonimo benefattore voleva comprarti dei fiori, ma visto che la sua vita è molto impegnata e non avendo modo di andarli comprare (in realtà si riserva il diritto di comprarli per la prossima laurea, altrimenti poi sembra tutto uguale) e visto che non è periodo, almeno 'sto bigliettino lo puoi vedere per sempre!
+            <br>
+            Ovviamente, come ben sai senza il sudore non si può andare avanti, dunque prima di scoprire il messaggio segreto, dovrai risolvere un piccolo indovinello!<br>
+            Sei pronta?
+        </p>
     </div>
 </div>
