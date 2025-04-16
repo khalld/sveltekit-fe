@@ -27,19 +27,14 @@
     <Heart {topPos} {leftPos} />
 {/each}
 
-<div class="container">
-    <h1>happy present!</h1>
+<div class="container-fluid">
+    <h1>Buon compleanno amore mio!!</h1>
     <div class="row">
         <div class="col-12 text-center">
-            <img src="https://khalld.github.io/sveltekit-fe/imgshbday/1.jpg" alt="Happy Birthday">
+            <img class="img-fluid" src="https://khalld.github.io/sveltekit-fe/imgshbday/14.jpg" alt="Happy Birthday">
         </div>
         <p>
-            Ciao Marta! (?) <br> 
-            Siamo una software house locale il cui obbiettivo è fare tanti tanti molti soldi ma siamo stati ingaggiati da un anonimo benefattore per regalarti un messaggio di auguri digitale per il tuo compleanno!<br>
-            L'anonimo benefattore voleva comprarti dei fiori, ma visto che la sua vita è molto impegnata e non avendo modo di andarli comprare (in realtà si riserva il diritto di comprarli per la prossima laurea, altrimenti poi sembra tutto uguale) e visto che non è periodo, almeno 'sto bigliettino lo puoi vedere per sempre!
-            <br>
-            Ovviamente, come ben sai senza il sudore non si può andare avanti, dunque prima di scoprire il messaggio segreto, dovrai risolvere un piccolo indovinello!<br>
-            Sei pronta?
+            Ecco il mazzo di fiori che ti avrei voluto regalare! 
         </p>
     </div>
 </div>
