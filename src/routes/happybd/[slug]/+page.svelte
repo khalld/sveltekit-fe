@@ -86,14 +86,10 @@
             "image": "https://khalld.github.io/sveltekit-fe/imgshbday/19.jpg"
         },
     ]
+    // gestione idx/routing delle domande
+    $: slug = $page.params.slug; 
+    $: idx = slug - 1;
     
-    // $: slug = $page.params.slug;
-    // $: idx = slug - 1;
-    // $: console.log('Page slug:', slug);
-    // $: console.log('pageparams:', $page.params);
-    // $: console.log('page:', $page);
-    // $: console.log(questions[slug]);
-
     function checkAnswer(selectedOption) {
         const currentQuestion = questions[idx];
         console.log("selectedOption", selectedOption);
@@ -114,6 +110,12 @@
             status = 'danger';
         }
     }
+
+    // enable this for debugging
+    // $: console.log('Page slug:', slug);
+    // $: console.log('pageparams:', $page.params);
+    // $: console.log('page:', $page);
+    // $: console.log(questions[slug]);
 
 </script>
 
