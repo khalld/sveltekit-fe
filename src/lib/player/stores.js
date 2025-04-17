@@ -11,15 +11,6 @@ export const trackList = writable([
 		artist: 'Il tuo fidanzato',
 		file: 'https://khalld.github.io/sveltekit-fe/gigi_bday.mp3'
 		// file: 'https://khalld.github.io/fe-assets/assets/music/sound.mp3'
-	},
-	// {
-	// 	title: 'Symphony no. 5 in Cm, Op. 67',
-	// 	artist: 'Ludwig van Beethoven',
-	// 	file: 'https://sveltejs.github.io/assets/music/beethoven.mp3'
-	// }
+	}
 ]);
-
-export const addTrack = track => {
-	trackList.update(v => [...v, track])
-};
 

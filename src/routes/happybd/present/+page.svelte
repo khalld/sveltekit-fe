@@ -31,7 +31,7 @@
     <div class="card mt-2" style="">
         <img src="https://khalld.github.io/sveltekit-fe/imgshbday/14.jpg" class="card-img-top img-fluid" alt="happyyys">
         <div class="card-body">
-            <h5 class="card-title">Buon compleanno!</h5>
+            <h5 class="card-title">Buon compleanno amore 💐💐💐!</h5>
             
             <ul class="list-group list-group-flush">
                 <li class="list-group-item row "><Controls/></li>
