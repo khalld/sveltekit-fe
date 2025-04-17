@@ -2,8 +2,8 @@
     import Heart from '../../../lib/Heart.svelte';
     import Controls from '../../../lib/player/Controls.svelte';
 
-    let innerWidth = 2000;
-    let innerHeight = 1000;
+    let innerWidth = 1000;
+    let innerHeight = 500;
 
     let hearts = [];
 
@@ -21,24 +21,26 @@
 </script>
 
 
-<svelte:window bind:innerWidth bind:innerHeight />
+<!-- <svelte:window bind:innerWidth bind:innerHeight /> -->
 
-{#each hearts as { id, topPos, leftPos }}
-    <Heart {topPos} {leftPos} />
-{/each}
+<div class="container">
 
-<div class="container-fluid">
-    <h1>Buon compleanno amore mio!!</h1>
-    <div class="row">
-        <div class="col-12 text-center">
-            <img class="img-fluid" src="https://khalld.github.io/sveltekit-fe/imgshbday/14.jpg" alt="Happy Birthday">
+    {#each hearts as { id, topPos, leftPos }}
+        <Heart {topPos} {leftPos} />
+    {/each}
+    <div class="card mt-2" style="">
+        <img src="https://khalld.github.io/sveltekit-fe/imgshbday/14.jpg" class="card-img-top img-fluid" alt="happyyys">
+        <div class="card-body">
+            <h5 class="card-title">Buon compleanno!</h5>
+            <Controls/>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <button class="btn btn-sm btn-success" on:click={() => window.location.href = '/sveltekit-fe/happybd/present/secret' }>Vai al premio!</button>
+                </li>
+                <!-- <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li> -->
+            </ul>
         </div>
-        <p>
-            Ecco il mazzo di fiori che ti avrei voluto regalare! 
-        </p>
     </div>
 </div>
 
-<div class="container w-50 mt-3 mb-4">
-    <Controls/>
-</div>

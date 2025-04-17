@@ -7,6 +7,9 @@
     let answerisright = null;
     let status = 'danger';
     let idx = 0;
+
+    let btncolors = ["secondary", "light", "info", "warning"]
+    
     let questions = [
         {
             "id": 1,
@@ -82,36 +85,44 @@
 
 </script>
 
-
 <div class="container">
-    <h1>Domanda: {slug}</h1>
-
-    {#if questions[idx]}
-        <img class="img-fluid" src={questions[idx].image} alt="ciaoo" />
-        <div class="row">
-            <p>
-            {questions[idx].question}
-            </p>
-            </div>
-        <div class="row">
-            {#each questions[idx].options as option}
-                <button class="col col-12 btn btn-primary mx-2 my-2 " on:click={() => checkAnswer(option)}>{option}</button>
-            {/each}
-            {#if result}
-                <div class="alert alert-{status} d-flex align-items-center mx-2" role="alert">
-                    <div>{result}</div>
-                    {#if answerisright}
-                        <div class="w-100"></div>
-                        <button type="button" class="btn btn-sm bt-warning border border-dark border-2" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[idx].nextAnswer)}>Vai alla domanda successiva</button>
+    <div class="card mt-2" style="">
+        {#if questions[idx]}
+            <img src={questions[idx].image} class="card-img-top img-fluid" alt="img question">
+            <div class="card-body">
+                <h5 class="card-title">Domanda: {slug}</h5>
+                <p class="card-text">{questions[idx].question}</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item row">
+                        {#each questions[idx].options as option, i}
+                            <button class="col col-12 btn btn-{btncolors[i]} border mb-2" on:click={() => checkAnswer(option)}>{option}</button>
+                        {/each}
+                    </li>
+                    {#if result}
+                        <div class="alert alert-{status} d-flex align-items-center mx-2 mt-2" role="alert">
+                            <div>{result}</div>
+                            {#if answerisright}
+                                <!-- <div class="w-100"></div> -->
+                                <button type="button" class="btn btn-sm bt-warning border border-dark border-2" on:click={() => window.location.href = '/sveltekit-fe/happybd/' + (questions[idx].nextAnswer)}>Vai alla domanda successiva</button>
+                            {/if}
+                        </div>
                     {/if}
-                </div>
-            {/if}
-        </div>
-    {:else}
-        <p>Question not found.</p>
-    {/if}
-    
+                    <!-- <li class="list-group-item">An item</li> -->
+                    <!-- <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li> -->
+                </ul>
+            </div>
+            <!-- <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div> -->
+        {:else}
+            <div class="card-body">No question founded.</div>
+        {/if}
+    </div>
 </div>
+
+
 
 <style>
     .heart {
