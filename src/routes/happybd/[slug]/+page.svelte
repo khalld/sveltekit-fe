@@ -7,9 +7,7 @@
     let answerisright = null;
     let status = 'danger';
     let idx = 0;
-
     let btncolors = ["secondary", "light", "info", "warning"]
-    
     let questions = [
         {
             "id": 1,
@@ -47,20 +45,54 @@
         },
         {
             "id": 5,
-            "question": "Cosa sarà successo quel giorno?",
+            "question": "Cosa è successo il giorno della foto?",
             "options": ["Due gemelle hanno festeggiato insieme i loro 52 anni", "Una normale festa di compleanno", "Tutti ubriachi e divertiti. I fidanzati ricordano bene la serata", "Una festa di laurea"],
             "correctAnswer": "Tutti ubriachi e divertiti. I fidanzati ricordano bene la serata",
-            "nextAnswer": null,
+            "nextAnswer": 6,
             "image": "https://khalld.github.io/sveltekit-fe/imgshbday/12.jpg"
+        },
+        {
+            "id": 6,
+            "question": "Quanti anni ci sono tra la foto precedente e quest'ultima?",
+            "options": ["5", "3", "1", "Differenze? Ma sembrano più giovani!"],
+            "correctAnswer": "Differenze? Ma sembrano più giovani!",
+            "nextAnswer": 7,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/18.jpg"
+        },
+
+        {
+            "id": 7,
+            "question": "Che fine ha fatto quella borsa?",
+            "options": ["Conservata", "Ma AMOOO ERA DIFETTOSAA!!", "Mai ricevuta", "Foto creata dall'IA, non esiste"],
+            "correctAnswer": "Ma AMOOO ERA DIFETTOSAA!!",
+            "nextAnswer": 8,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/11.jpg"
+        },
+
+        {
+            "id": 8,
+            "question": "Qui nessuna domanda, era per dirti che sento uscire l'audio dalla foto.",
+            "options": ["Avanti"],
+            "correctAnswer": "Avanti",
+            "nextAnswer": 9,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/20.jpg"
+        },
+        {
+            "id": 9,
+            "question": "Ma chi stavi pinzannu?",
+            "options": ["Nan c'è nenti 'nda vita", "Nautru supricchiu", "Cu appi pani mureu cu appi fucu campau", "MEEE AMOOOO"],
+            "correctAnswer": "MEEE AMOOOO",
+            "nextAnswer": null,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/19.jpg"
         },
     ]
     
-    $: slug = $page.params.slug;
-    $: idx = slug - 1;
-    $: console.log('Page slug:', slug);
-    $: console.log('pageparams:', $page.params);
-    $: console.log('page:', $page);
-    $: console.log(questions[slug]);
+    // $: slug = $page.params.slug;
+    // $: idx = slug - 1;
+    // $: console.log('Page slug:', slug);
+    // $: console.log('pageparams:', $page.params);
+    // $: console.log('page:', $page);
+    // $: console.log(questions[slug]);
 
     function checkAnswer(selectedOption) {
         const currentQuestion = questions[idx];

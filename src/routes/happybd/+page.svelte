@@ -10,7 +10,7 @@
             <h5 class="card-title">Buon compleanno!</h5>
             <p class="card-text">
                 Ciao Marta! (sei tu giusto? secondo noi stai leggendo così!)
-                Siamo una software house italiana con sede in Burkina Faso il cui obbiettivo è fare tanti tanti molti soldi (di solito).
+                Siamo una software house italiana con sede in Burkina Faso il cui obbiettivo è, di solito, fare tanti tanti molti soldi.
                 
                 Siamo stati ingaggiati da un anonimo benefattore per regalarti un messaggio di auguri digitale per il tuo compleanno!<br>
                 Voleva comprarti dei fiori, ma visto che la sua vita è molto impegnata e non avendo modo di andarli comprare <s>in realtà si riserva il diritto di comprarli per la prossima laurea, altrimenti poi sembra tutto uguale</s>, ha deciso di darci due spicci per farti 'sto bigliettino digitale, almeno non devi avere l'accortezza di buttarlo via o conservarlo!<br>
