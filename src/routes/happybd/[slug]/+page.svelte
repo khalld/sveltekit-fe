@@ -20,9 +20,9 @@
         {
             "id": 2,
             "question": "Qual è la location della fotografia? Secondo te, cosa sta facendo il personaggio inquadrato?",
-            "options": ["Amsterdam, è troppo sballata per posare", 
+            "options": ["Barcellona, il personaggio sembra infastidio da un commento stupido del fotografo", 
                 "Adrano, alla villa delle papere. Il personaggio è schifiato perché ha sentito qualche zanno parlare", 
-                "Barcellona, il personaggio sembra infastidio da un commento stupido del fotografo", "Non lo so"],
+                "Amsterdam, è troppo sballata per posare", "Non lo so"],
             "correctAnswer": "Barcellona, il personaggio sembra infastidio da un commento stupido del fotografo",
             "nextAnswer": 3,
             "image": "https://khalld.github.io/sveltekit-fe/imgshbday/3.jpg"
@@ -37,48 +37,56 @@
         },
         {
             "id": 4,
-            "question": "Perché la protagonista delle foto sembra infastidita?",
-            "options": ["Non lo è", "Si è appena accorta di essere entrata in macchina con le scarpe fatte di m*rda", "Probabilmente il fidanzato ha espresso un consiglio sulle manovre da effettuare (?)", "Non lo ricordo"],
-            "correctAnswer": "Probabilmente il fidanzato ha espresso un consiglio sulle manovre da effettuare (?)",
+            "question": "Guarda quanto sei bellissima anche alle 4 del mattino!!",
+            "options": ["❤️"],
+            "correctAnswer": "❤️",
             "nextAnswer": 5,
-            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/9.jpg"
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/6.jpg"
         },
         {
             "id": 5,
-            "question": "Cosa è successo il giorno della foto?",
-            "options": ["Due gemelle hanno festeggiato insieme i loro 52 anni", "Una normale festa di compleanno", "Tutti ubriachi e divertiti. I fidanzati ricordano bene la serata", "Una festa di laurea"],
-            "correctAnswer": "Tutti ubriachi e divertiti. I fidanzati ricordano bene la serata",
+            "question": "Perché la protagonista delle foto sembra infastidita?",
+            "options": ["Non lo è", "Si è appena accorta di essere entrata in macchina con le scarpe fatte di m*rda", "Probabilmente il fidanzato ha espresso un consiglio sulle manovre da effettuare (?)", "Non lo ricordo"],
+            "correctAnswer": "Probabilmente il fidanzato ha espresso un consiglio sulle manovre da effettuare (?)",
             "nextAnswer": 6,
-            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/12.jpg"
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/9.jpg"
         },
         {
             "id": 6,
+            "question": "Cosa è successo il giorno della foto?",
+            "options": ["Due gemelle hanno festeggiato insieme i loro 52 anni", "Una normale festa di compleanno", "Tutti ubriachi e divertiti. I fidanzati ricordano bene la serata", "Una festa di laurea"],
+            "correctAnswer": "Tutti ubriachi e divertiti. I fidanzati ricordano bene la serata",
+            "nextAnswer": 7,
+            "image": "https://khalld.github.io/sveltekit-fe/imgshbday/12.jpg"
+        },
+        {
+            "id": 7,
             "question": "Quanti anni ci sono tra la foto precedente e quest'ultima?",
             "options": ["5", "3", "1", "Differenze? Ma sembrano più giovani!"],
             "correctAnswer": "Differenze? Ma sembrano più giovani!",
-            "nextAnswer": 7,
+            "nextAnswer": 8,
             "image": "https://khalld.github.io/sveltekit-fe/imgshbday/18.jpg"
         },
 
         {
-            "id": 7,
+            "id": 8,
             "question": "Che fine ha fatto quella borsa?",
             "options": ["Conservata", "Ma AMOOO ERA DIFETTOSAA!!", "Mai ricevuta", "Foto creata dall'IA, non esiste"],
             "correctAnswer": "Ma AMOOO ERA DIFETTOSAA!!",
-            "nextAnswer": 8,
+            "nextAnswer": 9,
             "image": "https://khalld.github.io/sveltekit-fe/imgshbday/11.jpg"
         },
 
         {
-            "id": 8,
-            "question": "Qui nessuna domanda, era per dirti che sento uscire l'audio dalla foto.",
+            "id": 9,
+            "question": "Qui nessuna domanda, era per dirti che sento uscire la tua voce dalla foto.",
             "options": ["Avanti"],
             "correctAnswer": "Avanti",
-            "nextAnswer": 9,
+            "nextAnswer": 10,
             "image": "https://khalld.github.io/sveltekit-fe/imgshbday/20.jpg"
         },
         {
-            "id": 9,
+            "id": 10,
             "question": "Ma chi stavi pinzannu?",
             "options": ["Nan c'è nenti 'nda vita", "Nautru supricchiu", "Cu appi pani mureu cu appi fucu campau", "MEEE AMOOOO"],
             "correctAnswer": "MEEE AMOOOO",
@@ -100,12 +108,12 @@
                 window.location.href = '/sveltekit-fe/happybd/present'; // Replace with actual route
             } else {
                 status = 'success';
-                result = 'Corretto! Vai alla domanda successiva.';
+                result = 'Corretto 👌! Vai alla domanda successiva.';
                 answerisright = true;
                 // window.location.href = '/sveltekit-fe/happybd/' + (questions[slug].id); // Replace with actual route
             }
         } else {
-            result = 'Avaiaaa, sbagghiasti! Vuoi provare un altra risposta? (siamo stati buoni perché è il tuo compleanno, altrimenti ti avremmo fatto reiniziare da capo!!)';
+            result = 'Avaiaaa, sbagghiasti! 🤌 😩 Prova un altra risposta. (siamo stati buoni perché è il tuo compleanno, altrimenti ti avremmo fatto reiniziare da capo!!)';
             answerisright = false;
             status = 'danger';
         }
