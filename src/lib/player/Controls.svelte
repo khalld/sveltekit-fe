@@ -104,26 +104,26 @@
 	src={src}
 />
 
-<div class='box'>
+<!-- <div class='box'> -->
 
-	<div class='info'>
+	<!-- <div class='info'>
 		<div class='title'>
 			<p><strong>Title</strong></p><p>{title}</p>
 		</div>
 		<div class='artist'>
 			<p><strong>Artist</strong></p><p>{artist}</p>
 		</div>
-	</div>
+	</div> -->
 	
-	<div class='buttons'>
+	<!-- <div class='buttons'> -->
 		
-		<button class='prev' on:click={previousTrack}>Prev</button>
+		<!-- <button class='prev' on:click={previousTrack}>Prev</button> -->
 		
 		<PlayButton controls/>
 		
-		<button class='next' on:click={nextTrack}>Next</button>
+		<!-- <button class='next' on:click={nextTrack}>Next</button> -->
 		
-		<p><strong>Volume</strong></p>
+		<!-- <p><strong>Volume</strong></p>
 		
 		<div class='volume-slider'>
 			<Slider
@@ -134,9 +134,9 @@
 				formatter='{v => Math.round(v * 100)}'
 				bind:value={volume}
 			/>
-		</div>
+		</div> -->
 		
-	</div>
+	<!-- </div> -->
 
 	<!-- <div class='progress'>
 		
@@ -171,10 +171,10 @@
 		
 <!-- 	</div> -->
 
-</div>
+<!-- </div> -->
 
 <style>
-	audio {
+	/* audio {
 		display: none
 	}
 	
@@ -289,7 +289,7 @@
 	
 	.prev, .next {
 		border-radius: 2rem;
-	}
+	} */
 	
 /* 	.debugger {
 		padding: 1rem;

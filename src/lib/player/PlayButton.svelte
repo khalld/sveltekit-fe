@@ -40,9 +40,10 @@
 {#if controls}
 
 	{#if $isPlaying === false}
-		<button class='play-button controls' on:click={playTrack}>
+	<button type="button" class="btn btn-primary btn-lg" on:click={playTrack}><i class="fa-solid fa-play fa-lg"></i></button>
+		<!-- <button class='btn btn-primary' on:click={playTrack}>
 			<PlayIcon/>
-		</button>
+		</button> -->
 	{:else if
 		$isPlaying === true &&
 		(
@@ -52,19 +53,29 @@
 			$status === 'can play all'
 		)
 	}
-		<button
+		<button type="button" class="btn btn-primary btn-lg" on:click={pauseTrack}>
+			<div class="spinner-border" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</button>
+
+		<!-- <button
 			class='play-button controls'
 			on:click={pauseTrack}
 		>
 			<LoadingIcon/>
-		</button>
+		</button> -->
 	{:else if $isPlaying === true}
+		<button type="button" class="btn btn-primary btn-lg" on:click={pauseTrack}>
+			<i class="fa-solid fa-pause"></i>
+		</button>
+<!-- 
 		<button
 			class='play-button controls'
 			on:click={pauseTrack}
 		>
 			<PauseIcon/>
-		</button>
+		</button> -->
 	{/if}
 
 {:else if track}
