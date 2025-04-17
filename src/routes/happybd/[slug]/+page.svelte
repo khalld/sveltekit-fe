@@ -92,11 +92,11 @@
     
     function checkAnswer(selectedOption) {
         const currentQuestion = questions[idx];
-        console.log("selectedOption", selectedOption);
-        console.log("currentQuestion", currentQuestion.correctAnswer);
+        // console.log("selectedOption", selectedOption);
+        // console.log("currentQuestion", currentQuestion.correctAnswer);
         if (selectedOption === currentQuestion.correctAnswer) {
             // Navigate to another page
-            if (currentQuestion.id === 5) {
+            if (currentQuestion.id === questions.length) {
                 window.location.href = '/sveltekit-fe/happybd/present'; // Replace with actual route
             } else {
                 status = 'success';
@@ -116,6 +116,7 @@
     // $: console.log('pageparams:', $page.params);
     // $: console.log('page:', $page);
     // $: console.log(questions[slug]);
+    $: console.log(questions.length);
 
 </script>
 
